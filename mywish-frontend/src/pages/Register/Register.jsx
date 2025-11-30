@@ -10,7 +10,7 @@ export default function Register() {
     const body = { nombre, correo, fechaNacimiento };
 
     try {
-      const res = await fetch("http://localhost:8080/usuarios", {
+      const res = await fetch("http://localhost:8080/api/usuarios", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
